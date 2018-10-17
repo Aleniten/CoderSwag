@@ -3,6 +3,7 @@ package com.aleapp.coderswag.Controller
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.aleapp.coderswag.Adapters.CategoryAdapter
 import com.aleapp.coderswag.Model.Category
 import com.aleapp.coderswag.R
@@ -20,5 +21,6 @@ class MainActivity : AppCompatActivity() {
         adapter = CategoryAdapter(this, DataServices.categories)
 
         categoryListView.adapter = adapter
+
     }
 }
